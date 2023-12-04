@@ -1,10 +1,16 @@
 <!--lint disable no-html first-heading-level no-shell-dollars-->
 
 <h1 align="center">
-  <img width="300" src="?sanitize=true" alt="ghedev">
+  <img width="300" src="https://github.com/Ghepes/ghedev/assets/39159631/4c373311-3ba8-41af-817d-4ef945783bf4?sanitize=true" alt="ghedev">
   <br>
   <br>
 </h1>
+
+
+
+
+
+
 
 > 📝 **ghedev** — Catch insensitive, inconsiderate writing.
 
