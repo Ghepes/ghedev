@@ -114,19 +114,7 @@ all rules.
 like][literals] are not warned about.
 
 ## Integrations
-
-*   Sublime — [`sindresorhus/SublimeLinter-contrib-ghedev`](https://github.com/sindresorhus/SublimeLinter-contrib-ghedev)
-*   Gulp — [`dustinspecker/gulp-ghedev`](https://github.com/dustinspecker/gulp-ghedev)
-*   Slack — [`keoghpe/ghedev-slack`](https://github.com/keoghpe/ghedev-slack)
-*   Ember — [`yohanmishkin/ember-cli-ghedev`](https://github.com/yohanmishkin/ember-cli-ghedev)
-*   Probot — [`swinton/linter-ghedev`](https://github.com/swinton/linter-ghedev)
-*   GitHub Actions — [`brown-ccv/ghedev-recommends`](https://github.com/marketplace/actions/ghedev-recommends)
-*   GitHub Actions (reviewdog) — [`reviewdog/action-ghedev`](https://github.com/marketplace/actions/run-ghedev-with-reviewdog)
-*   Vim — [`w0rp/ale`](https://github.com/w0rp/ale)
-*   Browser extension — [`skn0tt/ghedev-browser-extension`](https://github.com/skn0tt/ghedev-browser-extension)
-*   Contentful - [`stefanjudis/ghedev-js-contentful-ui-extension`](https://github.com/stefanjudis/ghedev-js-contentful-ui-extension)
-*   Figma - [`nickradford/figma-plugin-ghedev`](https://github.com/nickradford/figma-plugin-ghedev)
-*   VSCode - [`tlahmann/vscode-ghedev`](https://github.com/tlahmann/vscode-ghedev)
+on next
 
 ## Ignoring files
 
