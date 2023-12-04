@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3154ff" stop-opacity="0.631"/>
+      <stop offset="0.326" stop-color="#040762"/>
+      <stop offset="0.577" stop-color="#2a67cf"/>
+      <stop offset="0.799" stop-color="#3658ff"/>
+      <stop offset="1" stop-color="#7410cb"/>
+    </linearGradient>
+    <clipPath id="clip-logo-ghepes-purple">
+      <rect width="1200" height="630"/>
+    </clipPath>
+  </defs>
+  <g id="logo-ghepes-purple" clip-path="url(#clip-logo-ghepes-purple)">
+    <rect width="1200" height="630" fill="#fff"/>
+    <g id="Gruppe_1" data-name="Gruppe 1">
+      <path id="Path" d="M0,0H1200V630H0Z" fill="#6f42c1"/>
+      <g id="ghedev" transform="translate(267.5 195)">
+        <text id="GheDev-2" data-name="GheDev" transform="translate(0 177)" fill="#fff" font-size="195" font-family="InkFree, Ink Free" text-decoration="underline" style="mix-blend-mode: lighten;isolation: isolate"><tspan x="0" y="0">GheDev</tspan></text>
+      </g>
+      <rect id="Rectangle" width="1200" height="1200" rx="124" transform="translate(0 -355)" fill="url(#linear-gradient)"/>
+      <g id="ghedev-3" data-name="ghedev" transform="translate(267.5 245)">
+        <text id="GheDev-4" data-name="GheDev" transform="translate(0 177)" fill="#fff" font-size="195" font-family="InkFree, Ink Free" text-decoration="underline" style="mix-blend-mode: lighten;isolation: isolate"><tspan x="0" y="0">GheDev</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
