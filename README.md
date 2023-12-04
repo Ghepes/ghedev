@@ -637,7 +637,7 @@ Lots of [people helped since][contributors]!
 
 [yarn]: https://yarnpkg.com/
 
-[demo]: http://ghepes.dev/
+[demo]: http://www.ghepes.com/
 
 [screenshot]: screenshot.png
 
