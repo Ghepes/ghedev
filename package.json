@@ -1,10 +1,15 @@
 {
   "name": "ghedev",
-  "version": "11.0.1",
+  "version": "1.0.1",
   "description": "Catch insensitive, inconsiderate writing",
   "license": "MIT",
-  "repository": "https://github.com/ghepes/ghedev",
-  "bugs": "https://github.com/ghepes/ghedev/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghepes/ghedev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghepes/ghedev/issues"
+  },
   "funding": {
     "url": "https://github.com/sponsors/wromo"
   },
@@ -32,12 +37,13 @@
   "contributors": [
     "Iulian Ghepes <info.wromo@gmail.com> (http://www.ghepes.com)",
     "wromo <https://github.com/wromo> (https://www.wromo.com)"
-
   ],
   "type": "module",
   "main": "index.js",
   "sideEffects": false,
-  "bin": "cli.js",
+  "bin": {
+    "ghedev": "cli.js"
+  },
   "types": "index.d.ts",
   "files": [
     "index.d.ts",
@@ -127,5 +133,8 @@
     "detail": true,
     "strict": true,
     "ignoreCatch": true
+  },
+  "directories": {
+    "test": "test"
   }
 }
