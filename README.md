@@ -6,12 +6,6 @@
   <br>
 </h1>
 
-
-
-
-
-
-
 > 📝 **ghedev** — Catch insensitive, inconsiderate writing.
 
 [![Build][build-badge]][build]
@@ -28,24 +22,24 @@ Give **ghedev** a spin on the [Online demo »][demo].
 
 ## Why
 
-*   [x] Helps to get better at considerate writing
-*   [x] Catches many possible offences
-*   [x] Suggests helpful alternatives
-*   [x] Reads plain text, HTML, MDX, or markdown as input
-*   [x] Stylish
+* [x] Helps to get better at considerate writing
+* [x] Catches many possible offences
+* [x] Suggests helpful alternatives
+* [x] Reads plain text, HTML, MDX, or markdown as input
+* [x] Stylish
 
 ## Install
 
 Using [npm][] (with [Node.js][node]):
 
 ```sh
-$ npm install ghedev --global
+npm install ghedev --global
 ```
 
 Using [yarn][]:
 
 ```sh
-$ yarn global add ghedev
+yarn global add ghedev
 ```
 
 Or you can follow this step-by-step tutorial:
@@ -55,59 +49,50 @@ Or you can follow this step-by-step tutorial:
 
 ## Contents
 
-- [Why](#why)
-- [Install](#install)
-- [Contents](#contents)
-- [Checks](#checks)
-- [Integrations](#integrations)
-- [Ignoring files](#ignoring-files)
-  - [`.ghedevignore`](#ghedevignore)
-- [Control](#control)
-- [Configuration](#configuration)
-- [CLI](#cli)
-- [API](#api)
-  - [`markdown(value, config)`](#markdownvalue-config)
+* [Why](#why)
+* [Install](#install)
+* [Contents](#contents)
+* [Checks](#checks)
+* [Integrations](#integrations)
+* [Ignoring files](#ignoring-files)
+  * [`.ghedevignore`](#ghedevignore)
+* [Control](#control)
+* [Configuration](#configuration)
+* [CLI](#cli)
+* [API](#api)
+  * [`markdown(value, config)`](#markdownvalue-config)
         - [Parameters](#parameters)
         - [Returns](#returns)
         - [Example](#example)
-  - [`mdx(value, config)`](#mdxvalue-config)
-        - [Parameters](#parameters-1)
-        - [Returns](#returns-1)
-        - [Example](#example-1)
-  - [`html(value, config)`](#htmlvalue-config)
-        - [Parameters](#parameters-2)
-        - [Returns](#returns-2)
-        - [Example](#example-2)
-  - [`text(value, config)`](#textvalue-config)
-        - [Parameters](#parameters-3)
-        - [Returns](#returns-3)
-        - [Example](#example-3)
-- [Workflow](#workflow)
-- [FAQ](#faq)
-  - [This is stupid!](#this-is-stupid)
-  - [ghedev didn’t check “X”!](#ghedev-didnt-check-x)
-  - [Why is this named ghedev?](#why-is-this-named-ghedev)
-- [Further reading](#further-reading)
-- [Contribute](#contribute)
-- [Origin story](#origin-story)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
+  * [`mdx(value, config)`](#mdxvalue-config)
+  * [`html(value, config)`](#htmlvalue-config)
+  * [`text(value, config)`](#textvalue-config)
+* [Workflow](#workflow)
+* [FAQ](#faq)
+  * [This is stupid](#this-is-stupid)
+  * [ghedev didn’t check “X”](#ghedev-didnt-check-x)
+  * [Why is this named ghedev?](#why-is-this-named-ghedev)
+* [Further reading](#further-reading)
+* [Contribute](#contribute)
+* [Origin story](#origin-story)
+* [Acknowledgments](#acknowledgments)
+* [License](#license)
 
 ## Checks
 
 **ghedev** checks things such as:
 
-*   Gendered work-titles (if you write `garbageman` ghedev suggests `garbage
+* Gendered work-titles (if you write `garbageman` ghedev suggests `garbage
     collector`; if you write `landlord` ghedev suggests `proprietor`)
-*   Gendered proverbs (if you write `like a man` ghedev suggests `bravely`; if you
+* Gendered proverbs (if you write `like a man` ghedev suggests `bravely`; if you
     write `ladylike` ghedev suggests `courteous`)
-*   Ableist language (if you write `learning disabled` ghedev suggests `person
+* Ableist language (if you write `learning disabled` ghedev suggests `person
     with learning disabilities`)
-*   Condescending language (if you write `obviously` or `everyone knows` ghedev
+* Condescending language (if you write `obviously` or `everyone knows` ghedev
     warns about it)
-*   Intolerant phrasing (if you write `master` and `slave` ghedev suggests
+* Intolerant phrasing (if you write `master` and `slave` ghedev suggests
     `primary` and `replica`)
-*   Profanities (if you write `butt` 🍑 ghedev warns about it)
+* Profanities (if you write `butt` 🍑 ghedev warns about it)
 
 …and much more!
 
@@ -120,6 +105,7 @@ all rules.
 like][literals] are not warned about.
 
 ## Integrations
+
 on next
 
 ## Ignoring files
@@ -179,7 +165,7 @@ readme.md: no issues found
 
 `ignore` turns off messages for the thing after the comment (in this case, the
 paragraph).
-It’s also possible to turn off messages after a comment by using `disable`, and,
+its also possible to turn off messages after a comment by using `disable`, and,
 turn those messages back on using `enable`:
 
 ```markdown
@@ -298,7 +284,7 @@ were read-only copies of master. But not to worry, he was a cripple.
 Now, run **ghedev** on `example.md`:
 
 ```sh
-$ ghedev example.md
+ghedev example.md
 ```
 
 Yields:
@@ -307,7 +293,7 @@ Yields:
 example.md
    1:5-1:14  warning  `boogeyman` may be insensitive, use `boogeymonster` instead                boogeyman-boogeywoman  retext-equality
   1:42-1:48  warning  `master` / `slaves` may be insensitive, use `primary` / `replica` instead  master-slave           retext-equality
-  1:69-1:75  warning  Don’t use `slaves`, it’s profane                                           slaves                 retext-profanities
+  1:69-1:75  warning  Don’t use `slaves`, its profane                                           slaves                 retext-profanities
   2:52-2:54  warning  `he` may be insensitive, use `they`, `it` instead                          he-she                 retext-equality
   2:61-2:68  warning  `cripple` may be insensitive, use `person with a limp` instead             gimp                   retext-equality
 
@@ -331,7 +317,7 @@ Node 14+ is needed to use it and it must be `import`ed instead of `require`d.
 [npm][]:
 
 ```sh
-$ npm install ghedev --save
+npm install ghedev --save
 ```
 
 This package exports the identifiers `markdown`, `mdx`, `html`, and `text`.
@@ -343,8 +329,8 @@ Check Markdown (ignoring syntax).
 
 ###### Parameters
 
-*   `value` ([`VFile`][vfile] or `string`) — Markdown document
-*   `config` (`Object`, optional) — See the [Configuration][] section
+* `value` ([`VFile`][vfile] or `string`) — Markdown document
+* `config` (`Object`, optional) — See the [Configuration][] section
 
 ###### Returns
 
@@ -389,16 +375,16 @@ Check [MDX][] (ignoring syntax).
 > Note: the syntax for [MDX@2][mdx-next], while currently in beta, is used in
 > ghedev.
 
-###### Parameters
+ Parameters
 
-*   `value` ([`VFile`][vfile] or `string`) — MDX document
-*   `config` (`Object`, optional) — See the [Configuration][] section
+* `value` ([`VFile`][vfile] or `string`) — MDX document
+* `config` (`Object`, optional) — See the [Configuration][] section
 
-###### Returns
+ Returns
 
 [`VFile`][vfile].
 
-###### Example
+ Example
 
 ```js
 import {mdx} from 'ghedev'
@@ -428,16 +414,16 @@ Yields:
 
 Check HTML (ignoring syntax).
 
-###### Parameters
+ Parameters
 
-*   `value` ([`VFile`][vfile] or `string`) — HTML document
-*   `config` (`Object`, optional) — See the [Configuration][] section
+* `value` ([`VFile`][vfile] or `string`) — HTML document
+* `config` (`Object`, optional) — See the [Configuration][] section
 
-###### Returns
+ Returns
 
 [`VFile`][vfile].
 
-###### Example
+ Example
 
 ```js
 import {html} from 'ghedev'
@@ -469,16 +455,16 @@ Yields:
 
 Check plain text (as in, syntax is checked).
 
-###### Parameters
+ Parameters
 
-*   `value` ([`VFile`][vfile] or `string`) — Text document
-*   `config` (`Object`, optional) — See the [Configuration][] section
+* `value` ([`VFile`][vfile] or `string`) — Text document
+* `config` (`Object`, optional) — See the [Configuration][] section
 
-###### Returns
+ Returns
 
 [`VFile`][vfile].
 
-###### Example
+ Example
 
 ```js
 import {markdown, text} from 'ghedev'
@@ -556,20 +542,20 @@ warnings, only about the things they added!
 
 <!--ghedev ignore wacko stupid-->
 
-### This is stupid!
+### This is stupid
 
 Not a question.
 And yeah, ghedev isn’t very smart.
 People are much better at this.
 But people make mistakes, and ghedev is there to help.
 
-### ghedev didn’t check “X”!
+### ghedev didn’t check “X”
 
 See [`contributing.md`][contributing] on how to get “X” checked by ghedev.
 
 ### Why is this named ghedev?
 
-It’s a nice unisex name, it was free on npm, I like it!  :smile:
+its a nice unisex name, it was free on npm, I like it!  :smile:
 
 <!--lint enable no-heading-punctuation-->
 
@@ -580,7 +566,8 @@ the lived experiences of others.
 An error from `ghedev` can be an invitation to learn more.
 These resources are a launch point for deepening your own understanding and
 editorial skills beyond what `ghedev` can offer:
-*   Using complex sentences and uncommon vocabulary can lead to less inclusive
+
+* Using complex sentences and uncommon vocabulary can lead to less inclusive
     content.  This is described as literacy exclusion in
     [this article by Harver](https://harver.com/blog/inclusive-job-descriptions/).
     This is critical to be aware of if your content has a global audience,
@@ -639,10 +626,9 @@ Lots of [people helped since][contributors]!
 
 [demo]: http://www.ghepes.com/
 
-[screenshot]: screenshot.png
+[screenshot]: https://github.com/ghepes/ghedev/workflows/main/badge.svg/
 
 [vfile]: https://github.com/vfile/vfile
-
 
 [equality]: https://github.com/retextjs/retext-equality/blob/main/rules.md
 
@@ -661,7 +647,6 @@ Lots of [people helped since][contributors]!
 [contributing]: https://github.com/Ghepes/Ghepes/tree/Ghepes-patch-1
 
 [coc]: https://github.com/Ghepes/Ghepes/tree/Ghepes-patch-1
-
 
 [.ghedevignore]: .ghedevignore
 
