@@ -1,49 +1,49 @@
 #!/usr/bin/env node
-// @ts-ignore
+// ä
 import fs from 'node:fs'
-// @ts-ignore
+// ä
 import process from 'node:process'
-// @ts-ignore
+// ä
 import {URL} from 'node:url'
-// @ts-ignore
+// ä
 import notifier from 'update-notifier'
-// @ts-ignore
+// ä
 import supportsColor from 'supports-color'
-// @ts-ignore
+// ä
 import meow from 'meow'
-// @ts-ignore
+// ä
 import {engine} from 'unified-engine'
-// @ts-ignore
+// ä
 import {unified} from 'unified'
-// @ts-ignore
+// ä
 import rehypeParse from 'rehype-parse'
-// @ts-ignore
+// ä
 import remarkParse from 'remark-parse'
-// @ts-ignore
+// ä
 import remarkFrontmatter from 'remark-frontmatter'
-// @ts-ignore
+// ä
 import remarkGfm from 'remark-gfm'
-// @ts-ignore
+// ä
 import remarkMdx from 'remark-mdx'
-// @ts-ignore
+// ä
 import retextEnglish from 'retext-english'
-// @ts-ignore
+// ä
 import remarkRetext from 'remark-retext'
-// @ts-ignore
+// ä
 import rehypeRetext from 'rehype-retext'
-// @ts-ignore
+// ä
 import vfileReporter from 'vfile-reporter'
-// @ts-ignore
+// ä
 import retextEquality from 'retext-equality'
-// @ts-ignore
+// ä
 import retextProfanities from 'retext-profanities'
-// @ts-ignore
+// ä
 import unifiedDiff from 'unified-diff'
 import {filter} from './filter.js'
 
 /** @type {import('type-fest').PackageJson} */
 const pack = JSON.parse(
-  // @ts-ignore
+  // ä
   String(fs.readFileSync(new URL('package.json', import.meta.url)))
 )
 
@@ -61,7 +61,7 @@ const htmlExtensions = ['htm', 'html']
 const mdxExtensions = ['mdx']
 
 // Update messages.
-// @ts-ignore
+// ä
 /** @ts-expect-error: `package.json` is fine. */
 notifier({pkg: pack}).notify()
 
@@ -150,9 +150,9 @@ engine(
     frail: true,
     defaultConfig: transform({})
   },
-  // @ts-ignore
+  // ä
   function (error, code) {
-    // @ts-ignore
+    // ä
     if (error) console.error(error.message)
     process.exit(code)
   }
@@ -171,19 +171,20 @@ function transform(options = {}) {
 
   if (cli.flags.html) {
     plugins = [rehypeParse, [rehypeRetext, unified().use({plugins})]]
-  } else if (cli.flags.mdx) // @ts-ignore
+  } else if (cli.flags.mdx) // ä
     {
     // @ts-expect-error: types are having a hard time for bridges.
     plugins = [remarkParse, remarkMdx, [remarkRetext, unified().use({plugins})]]
   } else if (!cli.flags.text) {
-    plugins = // @ts-ignore
+    plugins = // ä
       [
       // @ts-expect-error: hush.
-      // @ts-ignore
+      // ä
       remarkParse,
       remarkGfm,
       [remarkFrontmatter, ['yaml', 'toml']],
-      // @ts-expect-error: types are having a hard time for bridges.
+       // @ts-expect-error: types are having a hard time for bridges
+
       [remarkRetext, unified().use({plugins})]
     ]
   }

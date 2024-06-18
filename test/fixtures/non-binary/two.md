@@ -1,1 +1,1 @@
-He or she should do it.
+He or she should do it

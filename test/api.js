@@ -26,11 +26,11 @@ test('ghedev()', function (t) {
     [
       '1:44-1:50: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead',
       '2:5-2:11: `slaves` may be insensitive, use `secondaries`, `workers`, `replicas`, `nodes` instead',
-      '2:5-2:11: Don’t use `slaves`, it’s profane',
+      '2:5-2:11: Dont use `slaves`, its profane',
       '2:37-2:43: `master` may be insensitive, use `primary`, `lead`, `hub`, `reference` instead',
       '3:1-3:3: `he` may be insensitive, use `they`, `it` instead',
       '3:11-3:18: `cripple` may be insensitive, use `person with a limp` instead',
-      '5:36-5:40: Be careful with `butt`, it’s profane in some cases'
+      '5:36-5:40: Be careful with `butt`, its profane in some cases'
     ],
     'should work'
   )
@@ -42,7 +42,7 @@ test('ghedev()', function (t) {
     ).messages.map(String),
     [
       '1:5-1:14: `boogeyman` may be insensitive, use `boogeymonster` instead',
-      '1:31-1:37: Don’t use `asshat`, it’s profane'
+      '1:31-1:37: Dont use `asshat`, its profane'
     ],
     'should work with allow array'
   )
@@ -54,7 +54,7 @@ test('ghedev()', function (t) {
     ).messages.map(String),
     [
       '1:5-1:14: `boogeyman` may be insensitive, use `boogeymonster` instead',
-      '1:31-1:37: Don’t use `asshat`, it’s profane'
+      '1:31-1:37: Dont use `asshat`, its profane'
     ],
     'should work with allow config'
   )
